@@ -28,6 +28,42 @@ print(number_test2.isdecimal()) # cyfry muszą być z przedziału 0-9 w innym wy
 
 print(atext.isalpha()) # sprawdza czy w stringu są tylko litery
 
-text_test='T3stujemy 4'
+text_test='T3stujemy'
 
-print(text_test.isalnum()) 
+print(text_test.isalnum()) # sprawdza czy wszystkie znaki są lierami/cyframi
+
+# ***35. Typ string cz.1 - LAB***
+
+print('\n'+'----')
+
+quote='A good programmer is someone who always looks both ways before crossing a one-way street'
+
+print(quote.upper())
+
+print(quote.lower())
+
+print(quote.endswith('street'))
+
+print(quote.isupper())
+
+print(quote.upper().isupper())
+
+print(quote.find('one'))
+
+print(quote.replace('one','1'))
+
+print(quote.replace('one','1').replace('both','2'))
+
+words=quote.split(' ')
+
+print(words)
+
+print(quote)
+
+print(quote.isdigit())
+
+print(quote.isdecimal())
+
+print(quote.isalpha())
+
+print(quote.isalnum())
