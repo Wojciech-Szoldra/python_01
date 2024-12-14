@@ -38,3 +38,18 @@ test4 = not y < 10 and not z < 15
 print('test4:',test4)
 test5 = not (y < 10 or z < 15) # zamiast zaprzeczać dwa warunki można zaprzeczyć ich alternatywę
 print('test5:',test5)
+
+# *** Typ i operatory logiczne - LAB ***
+
+is_automatic_mode = True # True = lights on / False = lights off
+is_80_percent_light = True # True = lights off / False = lights on
+is_direct_light = False # True = lights on / False = lights off
+is_rainy = False # True = lights on / False = lights off
+
+turn_lights_on = is_automatic_mode and (not is_80_percent_light or is_direct_light or is_rainy)
+
+print('Automatic mode (is the automatic mode turn on):                          ',is_automatic_mode)
+print('Is the light good (is the level of day-light above 80%):                 ',is_80_percent_light)
+print("Is sun low (is the Sun ligthing directly into the driver's face):        ",is_direct_light)
+print('Is it rainy (is it rainy):                                               ',is_rainy)
+print('TURN LIGHTS ON:                                                          ',turn_lights_on)
