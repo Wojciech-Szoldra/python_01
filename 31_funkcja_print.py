@@ -15,5 +15,5 @@ print(1,2,3, sep='-') # dodawanie separatora
 print(france,'USA','ESP','BE', sep='\n') # separator w postaci nowej linii
 print(france,'USA','ESP','BE', sep='\t') # separator w postaci tabulatora
 
-print('Znak backshals: \\')
+print('Znak backslash: \\')
 print('\u03A3') # kod ASCII
