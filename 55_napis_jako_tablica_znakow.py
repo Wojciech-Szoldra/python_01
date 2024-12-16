@@ -14,3 +14,21 @@ print(message[message.find(':')+2:]) # wyświetlamy nazwę drukarki, indeks pocz
 # wyświetlamy nazwę dokumentu przy pomocy zmiennej tymczasowej
 temp = message[message.find('"')+1:]
 print(temp[:temp.find('"')])
+
+# *** Napis jako tablica znaków - LAB ***
+
+q = "THE EYES"
+print(q[0],q[1],q[2],q[5],q[3],q[7],q[4],q[6], sep='')
+
+q = 'a gentelman'
+print(q[3],q[6],q[7],q[2],q[0],q[4],q[5],q[1],q[8:], sep='')
+
+q = 'THE MORSE CODE'
+print(q[1:3],q[6],q[8:10],q[10:12],q[4],q[2:4],q[12],q[11],q[0],q[7], sep='')
+
+line = 'Program "Kropka nad i" nadamy o: 22:00'
+time = line[line.find(':')+2:]
+print(time)
+
+tmp = line[line.find('"')+1:]
+print(tmp[:tmp.find('"')])
