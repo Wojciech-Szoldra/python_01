@@ -29,3 +29,29 @@ temp = c # to samo co wyżej tylko przy użyciu zmiennej tymczasowej
 c = d
 d = temp
 print(d,c)
+
+# *** Listy, tuplets - LAB ***
+
+marketing = ['loyality program','client promotion','market research']
+print(marketing)
+
+marketing.append('public relations')
+print(marketing)
+
+print(marketing[2])
+
+marketing.insert(1,'investor relations')
+print(marketing)
+
+email_marketing = marketing.copy()
+print(email_marketing)
+
+email_marketing.sort()
+print(email_marketing)
+
+internal_emails = ['internal communication']
+email_marketing.extend(internal_emails)
+print(email_marketing)
+
+email_marketing_tuple = tuple(email_marketing)
+print(email_marketing_tuple)
