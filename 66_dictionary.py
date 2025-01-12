@@ -28,3 +28,21 @@ new_leaders = {'IT':'Mattarella','DE':'Schulz'}
 # wartość z tym samym kluczem zostanie podmienia, wartość z nowym kluczem zostanie dodana
 country_leaders.update(new_leaders)
 print(country_leaders)
+
+# *** Dictionary - LAB ***
+
+chanels = {'Google':1480, 'Email':300, 'Natural Traffic':440, 'TV Spot':700}
+print(chanels)
+
+print(chanels['Email'])
+
+chanels_update = {'Natural Traffic':520, 'News':600}
+print(chanels)
+
+chanels.update(chanels_update)
+print(chanels)
+
+print(chanels.keys())
+
+print(chanels.pop('Email'))
+print(chanels)
