@@ -46,3 +46,12 @@ print(chanels.keys())
 
 print(chanels.pop('Email'))
 print(chanels)
+
+# *** Testy ***
+
+slownik_test = {'wart1':1, 'wart2':2, 'wart3':3, 'wart4':4, 'wart5':5}
+print(slownik_test.pop('wart5')) # usunie wartość po przekazanym kluczu - bez argumentu wyrzuci błąd
+print(slownik_test)
+
+print(slownik_test.popitem()) # usunie ostatnią wartość, nie przyjmuje argumentów
+print(slownik_test)
