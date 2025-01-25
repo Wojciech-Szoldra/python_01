@@ -46,3 +46,35 @@ print(f'Numbers have {elements1} elements')
 letters = 'example'
 elements2 = len(letters)
 print(f'Letters have {elements2} elements')
+
+# *** Pętla while - LAB ***
+print('\n*** LAB ***')
+print('\nTask 1 - First method\n')
+
+row_number = 1
+i = 31
+
+while row_number <= i:
+    print(f'Row number {row_number}')
+    row_number += 1
+
+print('\nTask 1 - Second method\n')
+
+first_row = 1
+last_row = 31
+current_row = first_row
+
+while current_row <= last_row:
+    print(f'Row number {current_row}')
+    current_row += 1
+
+print('\nTask 2\n')
+
+def the_cube_of_number(number1):
+    return number1 ** 3
+
+def the_square_root_of_number(number2):
+    return number2 ** 0.5
+
+print(the_cube_of_number(3))
+print(the_square_root_of_number(9))
