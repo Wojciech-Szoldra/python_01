@@ -48,6 +48,7 @@ elements2 = len(letters)
 print(f'Letters have {elements2} elements')
 
 # *** Pętla while - LAB ***
+
 print('\n*** LAB ***')
 print('\nTask 1 - First method\n')
 
@@ -76,5 +77,32 @@ def the_cube_of_number(number1):
 def the_square_root_of_number(number2):
     return number2 ** 0.5
 
-print(the_cube_of_number(3))
-print(the_square_root_of_number(9))
+num = 1
+i = 13
+
+while i >= num:
+    print(f'The cube of number {num} is {the_cube_of_number(num)}')
+    print(f'The square root of number {num} is {the_square_root_of_number(num)}')
+    num+=1
+
+print('\nTask 3\n')
+
+def power_function(val, pow_value):
+    return val ** pow_value
+
+x = 0
+value = 2
+i = 16
+
+while i >= x:
+    print(f'{value} to the power of {x} equals {power_function(value,x)}')
+    x+=1
+
+print('\nTask 4\n')
+
+stars = 1
+i = 10
+
+while i >= stars:
+    print(stars*'x')
+    stars+=1
