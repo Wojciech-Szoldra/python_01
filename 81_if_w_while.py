@@ -27,8 +27,7 @@ while i < max:
     print(f'{i}:',numbers[i],numbers[i+1])
 
     if numbers[i+1] == numbers[i]**2:
-        #print(f'\tFound: {numbers[i],numbers[i+1]}')
-        print(f'\tFound:')
+        print(f'\tFound: {numbers[i],numbers[i+1]}')
     
     i+=1
 
