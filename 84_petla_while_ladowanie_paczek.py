@@ -51,8 +51,4 @@ while guess != my_number:
     elif guess > my_number:
         print('Sorry- my number is smaller than your guess, Try again!')
     else:
-        print('Sorry- my number is greater than your guess, Try again!')
-
-    
-
-   
+        print('Sorry- my number is greater than your guess, Try again!') 
