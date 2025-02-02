@@ -1,3 +1,5 @@
+num = 30
+
 cargo = [40,20,4,5,30,8,2,7,3,19,32,40,20,35,15,32,9]
 cargo.sort()
 cargo.reverse()
@@ -12,3 +14,15 @@ while i < len(cargo) and (box_capacity - sum(box)) >= min(cargo):
     if (box_capacity - sum(box)) >= cargo[i]:
         box.append(cargo[i])
     i+=1
+
+# Testy
+
+def suma(a, b):
+    wynik = a + b
+    return wynik
+
+x = 10
+y = 20
+
+rezultat = suma(x, y)
+print(f'x + y = {rezultat}')
