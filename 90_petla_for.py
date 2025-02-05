@@ -42,8 +42,8 @@ for dat2 in data:
 
 print('\nTask 3\n')
 
-for dat2 in data:
-    elements = dat2.split(':') # metoda split tworzy listę
+for dat3 in data:
+    elements = dat3.split(':') # metoda split tworzy listę
     if elements[0] == 'Error':
         print(elements[0].upper(),elements[1].upper())
     else:
