@@ -24,7 +24,7 @@ for i in range(1, 10, 2):
 print()
 
 for number1 in range(1,21):
-    if number1 %2 == 0:
+    if number1 %2 == 0: # sprawdza czy liczba jest parzysta, % zwraca resztę
         print('Number %2d is %s' % (number1,'even'))
     else:
         print('Number %2d is %s' % (number1,'odd'))
@@ -36,3 +36,30 @@ for number2 in range(1,21):
         print(f'Number {number2} is even')
     else:
         print(f'Number {number2} is odd')
+
+# *** Pętla wykonywana określoną ilość razy - LAB ***
+
+print('\n*** LAB ***')
+print('\nTask 1\n')
+
+string_a = '+---+---+---+---+'
+string_b = '|   |   |   |   |'
+
+for i in range(10):
+    print(string_a)
+
+print('\nTask 2\n')
+
+for i in range(9):
+    if i %2 == 0:
+        print(string_a)
+    else:
+        print(string_b)
+
+print('\nTask 3\n')
+
+x = 'x'
+
+for i in range(9):
+    print(x)
+    x += 'x'
