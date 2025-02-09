@@ -76,3 +76,11 @@ for i in range(9):
     else:
         print(x)
         x += 'xx'
+
+print('\nSecond option\n')
+
+for i in range (1,10):
+    if i % 2 == 0:
+        print('x' * i)
+    else:
+        print('o' * i)
