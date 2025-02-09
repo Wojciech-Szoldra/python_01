@@ -1,7 +1,7 @@
 # Utworzenie obiektu range
 r = range(5)
 print(r)
-print(type(r)) # type zwraca typ danych danego ob8iektu
+print(type(r)) # type() zwraca typ danych danego obiektu
 
 print()
 
@@ -63,3 +63,16 @@ x = 'x'
 for i in range(9):
     print(x)
     x += 'x'
+
+print('\nTask 4\n')
+
+x = 'xx'
+o = 'o'
+
+for i in range(9):
+    if i %2 == 0:
+        print(o)
+        o += 'oo'
+    else:
+        print(x)
+        x += 'xx'
