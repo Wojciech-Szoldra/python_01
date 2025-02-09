@@ -34,8 +34,6 @@ for dat1 in data:
 
 print('\nTask 2\n')
 
-elements = []
-
 for dat2 in data:
     elements = dat2.split(':') # metoda split tworzy listę
     print(elements[0].upper(),elements[1])
