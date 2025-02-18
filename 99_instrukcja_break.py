@@ -44,12 +44,13 @@ definitions = [
     'Cette notion s\'applique de manière évidente dans les systèmes de poulies et de leviers. Elle est centrale dans les systèmes de freinage : on applique une petite force sur un parcours important et l\'on obtient une force importante transmise au système de freinage pour une course de faible distance.'
     ]
 
+print('\n---ver_1---\n')
 
 counter = 0
-short_text2 = ''
 
-for n in range(0,len(definitions)):
+for n in range(0,len(definitions)): # niepotrzebnie korzystałem z range i len
     
+    short_text2 = ''
     idx = definitions[n]
     words2 = idx.split(' ')
 
@@ -61,4 +62,21 @@ for n in range(0,len(definitions)):
         if counter >= 20:
             print(f'{short_text2}\n')
             counter = 0
+            break
+
+print('\n---ver_2---\n')
+
+for definition in definitions: # do iteracji wystarczy sama lista
+ 
+    words = definition.split(' ')
+    short_text = '' # trzeba "czyścić" short_term wewnątrz pętli
+    counter = 0
+ 
+    for word in words:
+ 
+        short_text += word+' '
+        counter += 1
+ 
+        if counter>=20:
+            print(short_text)
             break
