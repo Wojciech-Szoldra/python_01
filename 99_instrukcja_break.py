@@ -26,9 +26,9 @@ words = text.split(' ') # podzieli ze względu na spacje i utworzy tablicę
 short_text = ''
 counter = 0
 
-for n in words:
+for word in words:
     
-    short_text += f' {n}'
+    short_text += f' {word}'
     counter += 1
 
     if counter >= 20:
@@ -66,9 +66,9 @@ for n in range(0,len(definitions)): # niepotrzebnie korzystałem z range i len
 
 print('\n---ver_2---\n')
 
-for definition in definitions: # do iteracji wystarczy sama lista
+for definition in definitions: # Każdy element listy to jedna definicja
  
-    words = definition.split(' ')
+    words = definition.split(' ') # Każdą definicję dzielimy na słowa
     short_text = '' # trzeba "czyścić" short_term wewnątrz pętli
     counter = 0
  
@@ -78,5 +78,5 @@ for definition in definitions: # do iteracji wystarczy sama lista
         counter += 1
  
         if counter>=20:
-            print(short_text)
+            print(f'{short_text}\n')
             break
