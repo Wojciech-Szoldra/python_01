@@ -15,4 +15,21 @@ while year < max_time_years:
 
 else:
       print(f'Earnings amount: {round((total_profit - initial_capital),2)}')
-   
+
+print('\nTask 2\n')
+
+number = 20730906
+
+number_str = str(number) # konwersja liczby na ciąg znaków
+
+print(number_str)
+
+digits = [int(digit) for digit in number_str] # list comprehension / iterować możemy po stringach
+
+print(digits)
+
+sum = 0
+
+for digit in digits:
+    sum += digit
+    print(sum)
