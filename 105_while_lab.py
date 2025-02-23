@@ -36,13 +36,36 @@ while sum <= 0: # Pętla wykona się tylko raz
 
 print('\nCourse approach\n')
 
+'''
+Podejście zastosowane poniżej:
+-> % zwraca resztę z dzielenia - jak dzielimy przez 10 jest to ostatnia cyfra liczby
+-> // dzielenie całkowite wykonuje operacje dzielenia i zaokrągla wynik w dół do
+   najbliższej liczby całkowitej. Jeżeli dzielimy przez 10 to efekt jest taki, że 'usuwamy' ostatnią cyfrę z liczby.
+-> Pętla wykonuje się dopóki tmpnumber > 0, czyli po sunięciu ostatniej cyfry z liczby
+   przechodzimy do 'else'.
+# ''' 
+
 number=20730906
 tmpnumber = number
 sumOfDigits = 0
 
-while tmpnumber >0:
+while tmpnumber > 0:
     digit = tmpnumber % 10
     sumOfDigits += digit
     tmpnumber = tmpnumber//10
 else:
     print('the sum of digits of ', number, ' is',sumOfDigits)
+
+print('\nTask 3\n')
+
+text = 'United Space Alliance: This company provides major support to NASA for various projects, such as the space shuttle. One of its projects is to create Workflow Automation System (WAS), an application designed to manage NASA and other third-party projects. The setup uses a central Oracle database as a repository for information. Python was chosen over languages such as Java and C++ because it provides dynamic typing and pseudo-code-like syntax and it has an interpreter. The result is that the application is developed faster, and unit testing each piece is easier.'
+
+words = text.split(' ')
+number_of_words = len(words)
+word_length = 6
+long_words = 0
+
+for word in words:
+     if len(word) > word_length:
+          long_words += 1
+print(long_words)
