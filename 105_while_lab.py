@@ -8,7 +8,7 @@ total_profit = initial_capital
 year = 0
 
 while year < max_time_years:
-      yeraly_profit = total_profit * percent/100
+      yeraly_profit = total_profit * percent
       total_profit += yeraly_profit
       year += 1
       print(f'Year {year} summary: {round(total_profit, 2)}')
@@ -68,4 +68,5 @@ long_words = 0
 for word in words:
      if len(word) > word_length:
           long_words += 1
+
 print(long_words)
