@@ -36,15 +36,13 @@ text = "Industrial Light & Magic: In this case, you find Python used in the prod
 
 words = text.split(' ')
 
-word_dictionary = {} # Uwtorzenie pustego słownika
+word_dictionary = {} # Utworzenie słownika {Klucz:Wartość}
 
 for word in words:
-    
     word = word.lower().strip('.,:;!?()[]{}"\'') # Normalizacja słów
-    
     if word in word_dictionary:
-        word_dictionary[word] = word_dictionary[word]+1
+        word_dictionary[word] += 1 # Zwiększenie 'wartości' o 1
     else:
-        word_dictionary.setdefault(word,1)
+        word_dictionary.setdefault(word,1) # Dodanie nowego klucza z wartością
         
 print(word_dictionary)
