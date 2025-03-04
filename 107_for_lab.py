@@ -36,9 +36,13 @@ text = "Industrial Light & Magic: In this case, you find Python used in the prod
 
 words = text.split(' ')
 
-word_dictionary={}
+word_dictionary = {} # Uwtorzenie pustego słownika
+
 for word in words:
-    if word in word_dictionary.keys():
+    
+    word = word.lower().strip('.,:;!?()[]{}"\'') # Normalizacja słów
+    
+    if word in word_dictionary:
         word_dictionary[word] = word_dictionary[word]+1
     else:
         word_dictionary.setdefault(word,1)
