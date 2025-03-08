@@ -14,3 +14,10 @@ print('\n')
 
 print(round(f_smaller,2),round(f_bigger,2),round(f_bigger,3))
 print('\n')
+
+print(min(f_smaller,f_bigger), max(f_smaller, f_bigger))
+print('\n')
+
+list=[1,2,3,4,5,4,4,5,4]
+
+print(sum(list)/len(list))
