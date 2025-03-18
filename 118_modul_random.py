@@ -14,7 +14,7 @@ print(random.choice(fruits))
 colors = ['czerwony','zielony','niebieski'] 
 print(random.choices(colors, weights=[10,1,1], k =2))
 
-#łuży do losowego przetasowania elementów listy
+#służy do losowego przetasowania elementów listy
 numbers = [1,2,3,4,5]
 random.shuffle(numbers)
 print(numbers)
@@ -41,4 +41,19 @@ while number1 != number2:
     
     counter += 1
 
-    
+print('\nTask 2\n')
+
+countries = ['Uruguay','Russia','Saudi Arabia','Egypt','Spain','Portugal','Iran','Morocco','France','Denmark','Peru','Australia','Croatia','Argentina','Nigeria','Iceland','Brazil','Switzerland','Serbia','Costa Rica','Sweden','Mexico','Korea Republic','Germany','Belgium','England','Tunisia','Panama','Colombia','Japan','Senegal','Poland']
+
+random.shuffle(countries)
+print(countries)
+group_number = 0
+counter1 = 1
+
+for i in countries:
+    print(f'Group {group_number} {i}')
+
+    if counter1 % 4 == 0:
+        group_number +=1
+
+    counter1 += 1
