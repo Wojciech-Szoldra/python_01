@@ -8,7 +8,7 @@ for i in range(32,127):
 test = ord('A')
 print(f'A in Unicode = {test}')
 
-print('\n')
+print()
 
 # Generowanie hasła metoda 1
 ints = range(33, 127)
@@ -17,10 +17,11 @@ password = ''
 for i in range(16):
     password += chr(random.choice(ints))
 
-print(f'Password is: {password}')
+print(f'Hasło [metoda 1]: {password}')
+
+print()
 
 # Generowanie hasła metoda 2
-
 import secrets
 import string
 
@@ -29,7 +30,9 @@ def generate_password(length=12):
     password = ''.join(secrets.choice(alphabet) for i in range(length))
     return password
 
-print(f'Hasło [metoda 2]: {generate_password(16)}')
+print(f'Hasło [metoda 2]: {generate_password()}')
+
+print()
 
 # Funkcja os.urandom()
 import os
@@ -37,4 +40,4 @@ import os
 random_bytes = os.urandom(10)
 print(f'random_bytes: {random_bytes}')
 random_numbers = list(random_bytes)
-print(random_numbers)
+print(f'bytes to list: {random_numbers}')
