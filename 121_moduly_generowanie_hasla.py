@@ -29,12 +29,12 @@ def generate_password(length=12):
     password = ''.join(secrets.choice(alphabet) for i in range(length))
     return password
 
-print(generate_password(16))
+print(f'Hasło [metoda 2]: {generate_password(16)}')
 
 # Funkcja os.urandom()
 import os
 
 random_bytes = os.urandom(10)
-print(random_bytes)
+print(f'random_bytes: {random_bytes}')
 random_numbers = list(random_bytes)
 print(random_numbers)
