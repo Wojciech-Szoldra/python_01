@@ -30,7 +30,7 @@ def generate_password(length=12):
     password = ''.join(secrets.choice(alphabet) for i in range(length))
     return password
 
-print(f'Hasło [metoda 2]: {generate_password()}')
+print(f'Hasło [metoda 2]: {generate_password(16)}')
 
 print()
 
@@ -41,3 +41,26 @@ random_bytes = os.urandom(10)
 print(f'random_bytes: {random_bytes}')
 random_numbers = list(random_bytes)
 print(f'bytes to list: {random_numbers}')
+
+# Testy
+
+test1 = string.ascii_letters
+print(test1)
+
+test2= string.punctuation
+print(test2)
+
+length = 10
+alphabet = string.ascii_letters + string.digits + string.punctuation
+password = ''.join(secrets.choice(alphabet) for i in range(length))
+print(password)
+
+for i in range(length):
+    alphabet = string.ascii_letters + string.digits + string.punctuation
+    password = ''.join(secrets.choice(alphabet) for i in range(length))
+
+print(password)
+
+words = ["Hello", "world", "Python", "is", "awesome"]
+sentence = ' '.join(words)
+print(sentence)
