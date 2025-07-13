@@ -42,7 +42,7 @@ print(f'random_bytes: {random_bytes}')
 random_numbers = list(random_bytes)
 print(f'bytes to list: {random_numbers}')
 
-# Testy
+# ---Testy---
 
 test1 = string.ascii_letters
 print(test1)
@@ -61,6 +61,7 @@ for i in range(length):
 
 print(password)
 
+# Metoda join()
 words = ["Hello", "world", "Python", "is", "awesome"]
 sentence = ' '.join(words)
 print(sentence)
