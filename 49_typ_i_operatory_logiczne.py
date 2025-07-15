@@ -23,7 +23,7 @@ not is_weekend and temperature < 20 and to_do_list != '' # pierwsze trzy warunki
 
 print('4. Are you happy? True/False:',is_happy)
 
-# Przykłądy z operatorem NOT
+# Przykłady z operatorem NOT
 x = 30
 test1 = x < 30
 print('test1:',test1)
