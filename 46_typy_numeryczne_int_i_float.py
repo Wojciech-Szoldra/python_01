@@ -6,7 +6,7 @@ print(five * three) # działania na zmiennych do których przypisano liczby
 
 print(type(five)) # sprawdzamy typ zmiennej
 
-print(type(five * three)) # sprawdzamy typ dla wyniku wyknanego obliczenia
+print(type(five * three)) # sprawdzamy typ dla wyniku wykonanego obliczenia
 
 import sys
 print(sys.maxsize)
@@ -18,7 +18,7 @@ print(type(number1 + number1)) # ze względu na dynamiczne implementowanie zwró
 very_big_value = 99999999999999999999999999
 print(type((very_big_value+1)/2)) # operator dzielenia w Pythonie zawsze zwraca float
 
-print(five//three) # dzielenie całkowite
+print(f'Dzielenie całkowite: {five//three}') # dzielenie całkowite
 
 print(five % three) # dzielenie modulo
 
