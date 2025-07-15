@@ -56,9 +56,9 @@ print(quote.replace('one','1').replace('both','2'))
 
 #words=quote.split(' ')
 
-print(f'ddddd{quote.split(' ')}')
-
 #print(words)
+
+print(f'split(): {quote.split(' ')}')
 
 print(quote)
 
