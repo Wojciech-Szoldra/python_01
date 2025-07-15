@@ -34,13 +34,13 @@ print(text_test.isalnum()) # sprawdza czy wszystkie znaki są lierami/cyframi
 
 # ***35. Typ string cz.1 - LAB***
 
-print('\n'+'----')
+print('\n'+'Zadania''\n')
 
 quote='A good programmer is someone who always looks both ways before crossing a one-way street'
 
-print(quote.upper())
+print(f'upper(): {quote.upper()}')
 
-print(quote.lower())
+print(f'lower(): {quote.lower()}')
 
 print(quote.endswith('street'))
 
@@ -48,15 +48,17 @@ print(quote.isupper())
 
 print(quote.upper().isupper())
 
-print(quote.find('one'))
+print(f'find(): {quote.find('one')}')
 
 print(quote.replace('one','1'))
 
 print(quote.replace('one','1').replace('both','2'))
 
-words=quote.split(' ')
+#words=quote.split(' ')
 
-print(words)
+print(f'ddddd{quote.split(' ')}')
+
+#print(words)
 
 print(quote)
 
