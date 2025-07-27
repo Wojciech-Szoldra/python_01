@@ -102,4 +102,3 @@ for i in range(5):
     print(f"Liczba: {i}")
 
 print("\n" + "="*40 + "\n")
-print('1'*20)
