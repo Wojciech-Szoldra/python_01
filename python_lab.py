@@ -24,7 +24,7 @@ print(hp)
 print(hp[2]) #indeksujemy od zera
 hp.append('NEW1') #dodajemy na końcu
 print(hp)
-hp.insert(1,'NEW2') #dodajemy na we wskazanym indeksie
+hp.insert(1,'NEW2') #dodajemy na wskazanym indeksie
 print(hp)
 hp.remove('NEW1')
 print(hp)
@@ -33,3 +33,73 @@ print(hp)
 list1 = [2,6,8,3,4]
 list2 = sorted(list1) #sortujemy listę - zwraca nową
 print(list2)
+
+print('---4. Krotki---')
+
+# krotki są niemutowalne - nie da się zmienić ich zawartości
+
+tuple1 = (1,2,3,4,5)
+print(tuple1[1])
+print(tuple1.index(3)) # wskazuje na jakim indeksie znajduje się element
+print(max(tuple1)) # zwraca największy element
+tuple_to_list = list(tuple1) # konwersja krotki na listę
+tuple_to_list.append(6)
+print(tuple_to_list)
+
+print('---5. Słowniki---')
+
+country_leaders = {'PL':'Duda','US':'Trump'}
+print(country_leaders)
+print(country_leaders['PL']) # dostęp do wartości przez klucz
+country_leaders['DE'] = 'Merkel'
+print(country_leaders)
+print(country_leaders.keys())
+
+print('---6. Instrukcja warunklowa if---')
+
+def check_number(num):
+    if num > 0:
+        print('liczba jest dodatnia')
+    elif num == 0:
+        print('liczba jest równa zero')
+    else:
+        print('liczba jest ujemna')
+
+check_number(5)
+check_number(0)
+check_number(-3)
+
+liczba = -5
+ternary = 'dodatnia' if liczba > 0 else 'ujemna'
+print(ternary)
+
+print('---7. Pętle for i while---')
+
+licznik = 1
+
+while licznik <= 5:
+    print(f'Licznik wynosi: {licznik}')
+    licznik+=1
+
+liczby = [1,2,5,7,9,10]
+szukana = 5
+i = 0
+
+print(len(liczby))
+
+while len(liczby) > i:
+    if szukana == liczby[i]:
+        print(f'Szukana liczba to: {szukana}')
+        break
+    i+=1
+    print(i)
+
+print('\n===range()===\n')
+
+print("=== PRZYKŁAD 1: range(5) ===")
+print("Wypisujemy liczby od 0 do 4:")
+for i in range(5):
+    print(f"Liczba: {i}")
+
+print("\n" + "="*40 + "\n")
+print('1'*20)
