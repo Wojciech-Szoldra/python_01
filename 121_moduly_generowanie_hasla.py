@@ -65,3 +65,35 @@ print(password)
 words = ["Hello", "world", "Python", "is", "awesome"]
 sentence = ' '.join(words)
 print(sentence)
+
+print('\n===LAB===\n')
+print('===Task 1===\n')
+
+min = 1
+max = 6
+
+dice = random.randint(min,max)
+
+if dice == 1:
+    print('\n o\n')
+elif dice == 2:
+    print('  o\n\no')
+elif dice == 3:
+    print('  o\n o\no')
+elif dice == 4:
+    print('o o\n\no o')
+elif dice == 5:
+    print('o o\n o\no o')
+else:
+    print('o o\no o\no o')
+
+print('\n===Task 2===\n')
+
+dices=[] 
+
+for i in range(5):
+    roll = random.randint(min,max)
+    dices.append(roll)
+
+dices.sort()
+print(dices)
