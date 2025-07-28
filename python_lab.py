@@ -102,3 +102,11 @@ for i in range(5):
     print(f"Liczba: {i}")
 
 print("\n" + "="*40 + "\n")
+
+print('\n===moduł string===\n')
+
+import string
+
+tekst = "Telefon: +48 123-456-789, kod pocztowy: 00-950"
+wynik = ''.join(ch for ch in tekst if ch in string.digits)
+print(wynik)
