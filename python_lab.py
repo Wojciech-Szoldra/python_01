@@ -107,6 +107,16 @@ print('\n===moduł string===\n')
 
 import string
 
-tekst = "Telefon: +48 123-456-789, kod pocztowy: 00-950"
-wynik = ''.join(ch for ch in tekst if ch in string.digits)
+tekst = "Telefon: +48 123-456-789, adres e-mail example@example.com"
+# pętla przejdzie przez wszystkie znaki, 
+# znak trafi do 'wynik' jeżeli spełniony będzie warunek if
+wynik = ''.join(ch for ch in tekst if ch in string.digits) 
 print(wynik)
+
+print(string.ascii_letters)
+
+line = 'this is the end of this lesson'
+list = line.split(' ')
+print(list)
+text = 'ggg'.join(list)
+print(text)
