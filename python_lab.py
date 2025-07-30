@@ -118,5 +118,8 @@ print(string.ascii_letters)
 line = 'this is the end of this lesson'
 list = line.split(' ')
 print(list)
-text = 'ggg'.join(list)
+
+# funkcja join() połączy stringi znajdujące się w liście 
+# za pomocą znaku/stringa na którym została wywołana
+text = ' '.join(list) 
 print(text)
