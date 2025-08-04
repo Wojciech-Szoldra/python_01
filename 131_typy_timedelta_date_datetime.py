@@ -95,3 +95,19 @@ print(datetime.now().strftime("%w"))
 # Na przykład potrzebne by było zapisanie do pliku w odpowiednim formacie daty/czasu uruchomienia programu. Możemy wtedy skorzystać z strftime() i sformatować datę według uznania.
 
 print(datetime.now().strftime("%d-%m-%Y %H:%M:%S"))
+
+print('====LAB====\n')
+
+print('====ZAD 1====\n')
+
+import math
+
+inputdata = [0,1,2,3,5,8,13,21,34,55,89]
+factortable = [0,0.01,0.02, 0.03,0.05,0.08,0.13,0.21,0.34,0.55,0.89]
+
+print(f'inputdata: {len(inputdata)} / factortable: {len(factortable)}')
+
+if len(inputdata) == len(factortable):
+    print('OK')
+else:
+    print('inputdata and factor table need to have equal number elements')
