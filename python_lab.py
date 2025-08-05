@@ -123,3 +123,11 @@ print(list)
 # za pomocą znaku/stringa na którym została wywołana
 text = ' '.join(list) 
 print(text)
+
+print('='*40)
+
+import random
+
+moneta = random.randint(1,2)
+wynik = 'orzeł' if moneta == 1 else 'reszka'
+print(f'Orzeł czy Reszka? {wynik}')
