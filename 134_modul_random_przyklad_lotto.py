@@ -1,7 +1,7 @@
 # Importujemy moduł random
 import random
 
-# Tworzymy zmienną random w której przechowywane będą numery
+# Tworzymy listę w której przechowywane będą numery
 my_numbers = []
 
 # Pętla wykonuje się dopóki lista my_numbers jest mniejsza niż 7 elementów
@@ -45,22 +45,21 @@ player1 = []
 player2 = []
 
 max = len(all_cards)
-i=0
 
-allCards = []
-for c in colors:
-    for f in figures:
-        allCards.append("%s - %s" % (c, f))
- 
-print(allCards)
-
-while i < (max-1):
+for i in range(max):
+    print(i)
     if i % 2 == 0:
         player1.append(all_cards[i])
     else:
         player2.append(all_cards[i])
 
-    i+=1
-
 print(f'Player 1: {player1}')
 print(f'Player 2: {player2}')
+
+print('='*40+'\n')
+
+player1 = all_cards[0:12]
+player2 = all_cards[12:24]
+
+print(player1)
+print(player2)
