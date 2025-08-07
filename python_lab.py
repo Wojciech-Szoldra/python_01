@@ -131,3 +131,25 @@ import random
 moneta = random.randint(1,2)
 wynik = 'orzeł' if moneta == 1 else 'reszka'
 print(f'Orzeł czy Reszka? {wynik}')
+
+print('='*40)
+
+liczby = [1,2,3,4,5,6,7,8,9]
+
+# Slicing
+
+# Wyciągamy 3 pierwsze elementy
+t1 = liczby[0:3]
+print(t1)
+
+# Wyciągamy wszystko od drugiego elementu
+t2 = liczby[1:]
+print(t2)
+
+# Wyciągamy dwa pierwsze elementy
+t3 = liczby[:2]
+print(t3)
+
+# Wyciągamy ostatnie trzy elementy
+t4 = liczby[-3:]
+print(t4)
