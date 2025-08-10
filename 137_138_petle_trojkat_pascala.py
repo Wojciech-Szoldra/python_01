@@ -1,5 +1,14 @@
+# Dokładny opis w notatkach
+# W pętli while wykonujemy dodawanie wewnątrz append() - ciekawe 
+
 numbers = [1]
-print(numbers)
+
+line = ''
+
+for n in numbers:
+    line+= '%3d' % (n)
+
+print(line.center(50))
 
 for i in range(5):
 	
@@ -12,4 +21,9 @@ for i in range(5):
         
     new_numbers.append(1)
     numbers = new_numbers.copy()
-    print(numbers)
+
+    line = ''
+    for n in numbers:
+        line+= '%3d' % (n)
+
+    print(line.center(50))
