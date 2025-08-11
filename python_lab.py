@@ -153,3 +153,14 @@ print(t3)
 # Wyciągamy ostatnie trzy elementy
 t4 = liczby[-3:]
 print(t4)
+
+print('='*40)
+
+# Konwertowanie int na str
+
+ms = 'test1 %d'
+print(ms % 10)
+
+ms2 = 'test2'
+ms2 += '%4d' % 10
+print(ms2)
