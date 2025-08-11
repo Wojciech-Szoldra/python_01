@@ -1,16 +1,19 @@
 # Dokładny opis w notatkach
 # W pętli while wykonujemy dodawanie wewnątrz append() - ciekawe 
 
+width = 50
+height = 5
+
 numbers = [1]
 
 line = ''
 
 for n in numbers:
-    line+= '%3d' % (n)
+    line+= '%4d' % (n)
 
-print(line.center(50))
+print(line.center(width))
 
-for i in range(5):
+for i in range(height):
 	
     new_numbers = [1]
     position = 0
@@ -24,6 +27,6 @@ for i in range(5):
 
     line = ''
     for n in numbers:
-        line+= '%3d' % (n)
+        line+= '%4d' % (n)
 
-    print(line.center(50))
+    print(line.center(width))
