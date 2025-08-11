@@ -30,3 +30,30 @@ for i in range(height):
         line+= '%4d' % (n)
 
     print(line.center(width))
+
+print('====LAB====\n')
+
+print('====ZAD 1====\n')
+
+import random
+
+colors = ['Hearts','Diamonds','Clubs','Spades']
+
+figures = [
+    {'Figure':'Ace',  'Power':14},
+    {'Figure':'King', 'Power':13},
+    {'Figure':'Queen','Power':12},
+    {'Figure':'Jack', 'Power':11},
+    {'Figure':'10',   'Power':10},
+    {'Figure':'9',    'Power':9}]
+
+all_cards = []
+
+for c in colors:
+    for f in figures:
+        a_card = f.copy()
+        a_card['Color'] = c
+        all_cards.append(a_card)
+
+print(all_cards)
+print(len(all_cards))
