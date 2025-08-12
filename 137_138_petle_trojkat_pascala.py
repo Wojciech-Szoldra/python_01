@@ -99,4 +99,44 @@ while len(player1) > 0 and len(player2) > 0:
 
 print('Player 1 WON !!!') if len(player1) > 0 else print('Player 2 WON !!!')
 
+print('====ZAD 1====\n')
 
+play=1
+
+while len(player1) > 0 and len(player2) > 0:
+    card1 = player1.pop(0)
+    card2 = player2.pop(0)
+    stock = []
+
+    while card1['Power'] == card2['Power']:
+        print(f'The war begins: {card1['Power']} vs {card2['Power']}')
+        stock.append(card1)
+        stock.append(card2)
+
+        if player1 < 2:
+            player2.extend(stock)
+            player2.extend(player1)
+            break
+        elif player2 < 2:
+            player1.extend(stock)
+            player1.extend(player2)
+        else:
+            card1 = player1.pop(0)
+            card2 = player2.pop(0)
+            stock.append(card1)
+            stock.append(card2)
+            card1 = player1.pop(0)
+            card2 = player2.pop(0)
+
+    if card1['Power'] > card2['Power']:
+        stock.append(card1)
+        stock.append(card2)
+        player1.extend(stock)
+        print(f'Game:{game}    PLAY-1  {card1['Power']} vs {card2['Power']}  {'*'*len(player1)}') 
+    elif card1['Power'] < card2['Power']:
+        stock.append(card1)
+        stock.append(card2)
+        player2.extend(stock)
+        print(f'Game:{game}    PLAY-2  {card1['Power']} vs {card2['Power']}  {'*'*len(player2)}') 
+
+    play+=1
