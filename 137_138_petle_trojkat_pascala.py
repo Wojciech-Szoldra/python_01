@@ -78,7 +78,7 @@ print(f'Player 2: {player2}')
 
 game=1
 
-while len(player1) > 0:
+while len(player1) > 0 and len(player2) > 0:
     card1 = player1.pop(0)
     card2 = player2.pop(0)
 
