@@ -24,9 +24,9 @@ print('====ZAD 1====\n')
 
 def how_many_days_left():
     from datetime import date
-
     today = date.today()
-    last_day = date(2025,12,31)
+    current_year = today.year
+    last_day = date(current_year,12,31)
     days_number = last_day - today
     print(f'{days_number.days} days left to the end of the year')
     return
@@ -35,9 +35,9 @@ how_many_days_left()
 
 def how_many_weeks_left():
     from datetime import date
-
     today = date.today()
-    last_day = date(2025,12,31)
+    current_year = today.year
+    last_day = date(current_year,12,31)
     days_number = last_day - today
     print(f'{days_number.days // 7} weeks left to the end of the year')
     return
