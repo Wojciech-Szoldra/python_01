@@ -5,4 +5,3 @@ def print_hello():
     return
 
 print_hello()
-print_hello()
