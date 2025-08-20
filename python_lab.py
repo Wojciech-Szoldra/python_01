@@ -213,3 +213,12 @@ for i in range(height):
         line+= '%4d' % (n)
 
     print(line.center(width))
+
+print('='*40)
+
+# Jak liczy weekday()
+
+from datetime import date
+
+day = date(2025,8,18)
+print(day.weekday())
