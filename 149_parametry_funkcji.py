@@ -60,8 +60,6 @@ def print_animal(animal):
     else:
         print(f'Cannot print \'{animal}\'')
 
-animal = 'bat'
-
 print_animal('cat')
 
 print('====ZAD 2====\n')
