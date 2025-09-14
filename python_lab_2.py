@@ -17,6 +17,8 @@ while: kod wykonuje się do momentu w którym w liście pozostanie 1 element
 
     w pozostałych przypadkach (guess < item) do low przypisujemy 'mid +1'. Robimy tak ponieważ wiemy, że środkowa wartość z listy jest mniejsza niż wartość 'item'. Oznacza to, że nie musimy sprawdzać części listy znajdującej się poniżej środkowej wartości, oraz sama środkowa wartość jes różna więc jej też nie musimy sprawdzać (dlatego mid+1)
 '''
+import catimage
+import os
 
 def binary_search(list, item):
     low = 0
