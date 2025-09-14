@@ -36,3 +36,17 @@ wykonaj_komende(["idź", "północ"])
 wykonaj_komende(["weź", "miecz"])
 wykonaj_komende(['wyjdź'])
 wykonaj_komende(['weź', 'eliksir'])
+
+print('====LAB====\n')
+
+print('====ZAD 1====\n')
+
+# Ciąg geometryczny
+# a1-pierwszy element ciągu; factor-iloraz ciągu; index-który element ciągu ma zostać wyliczony
+
+def give_geom_sq_element(a1=2,factor=2,index=2):
+     #The function calculates the value of a given term of a geometric sequence
+     
+	 return a1 * factor**(index-1)
+
+print(give_geom_sq_element(1,2,64))
