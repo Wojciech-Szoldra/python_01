@@ -6,14 +6,14 @@ def do_action(action, parameter):
 
 do_action('buy','shoes')
 
-print('\n') 
+print('\ntest') 
 
 #Funkcja z krotką (tuple)
 def do_action2(action, *parameter):
 	print(f'action: {action}')
 	print(f'parameter: {parameter}')
-	for element in parameter:
-		print(f'element is {parameter}')
+	for i in parameter:
+		print(f'element is {i}')
 	return
 
 do_action2('buy','shoes','socks','t-shirt')

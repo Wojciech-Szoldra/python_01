@@ -222,3 +222,12 @@ from datetime import date
 
 day = date(2025,8,18)
 print(day.weekday())
+
+def do_action2(action, *parameter):
+	print(f'action: {action}')
+	print(f'parameter: {parameter}')
+	for element in parameter:
+		print(f'element is {element}')
+	return
+
+do_action2('buy','shoes','socks','t-shirt')
