@@ -9,11 +9,13 @@ print('Wyszukiwanie binarne\n')
 
 while: kod wykonuje się do momentu w którym w liście pozostanie 1 element
     dzielimy (modulo) listę na pół i wynik przypisujemy do 'mid'
-    wartość znajdująca się pod indeksem 'mid' przypisana zostaje do 'guess'
+    wartość znajdująca się pod indeksem 'mid' przypisana zostaje do 'guess' (to jest liczba którą porównywali będziemy do 'item')
 
-    jeżeli 'guess' == 'item' zwracany jest indeks 'mid' czyi trafione za pierwszym razem
+    jeżeli 'guess' == 'item' zwracany jest indeks 'mid'
     
-    jeżeli 'guess' > 'item' to do 'high' przypisujemy 'mid-1' czyli w następnym wykonaniu pętli zmniejszamy zakres przeszukiwanej listy
+    jeżeli 'guess' > 'item' to do 'high' przypisujemy 'mid-1'. Robimy tak ponieważ wiemy, że środkowa wartość z listy jest większa niż wartość 'item'. Oznacza to, że nie musimy sprawdzać części listy znajdującej się powyżej środkowej wartości, oraz sama środkowa wartość jes różna więc jej też nie musimy sprawdzać (dlatego mid-1)
+
+    w pozostałych przypadkach (guess < item) do low przypisujemy 'mid +1'. Robimy tak ponieważ wiemy, że środkowa wartość z listy jest mniejsza niż wartość 'item'. Oznacza to, że nie musimy sprawdzać części listy znajdującej się poniżej środkowej wartości, oraz sama środkowa wartość jes różna więc jej też nie musimy sprawdzać (dlatego mid+1)
 '''
 
 def binary_search(list, item):
