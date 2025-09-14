@@ -6,7 +6,7 @@ def do_action(action, parameter):
 
 do_action('buy','shoes')
 
-print('\ntest') 
+print('\n') 
 
 #Funkcja z krotką (tuple)
 def do_action2(action, *parameter):
@@ -68,7 +68,7 @@ def print_animal(*animal):
         elif i == 'bat':
             print(txt_bat)
         else:
-            print(f'Cannot print \'{i}\' - choose correct value: cat, bear, bar')
+            print(f'Cannot print \'{i}\' - choose correct value: cat, bear, bat')
     return
 
 print_animal('cat','bear','dog','bat','cow')
