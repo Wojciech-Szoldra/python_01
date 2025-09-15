@@ -50,3 +50,28 @@ def give_geom_sq_element(a1=2,factor=2,index=2):
 	 return a1 * factor**(index-1)
 
 print(give_geom_sq_element(1,2,64))
+
+print('====ZAD 2====\n')
+
+a1 = 3
+factor = 2
+maxindex = 10
+
+for i in range(1,maxindex+1):
+    print(give_geom_sq_element(a1,factor,i))
+    
+print('====ZAD 3====\n')
+
+def give_factor_for_geom_seq(term,nextterm):
+     #The function calculates the factor of two given values
+	 
+	 return nextterm / term
+
+print(give_factor_for_geom_seq(12,24))
+
+print('====ZAD 4====\n')
+
+def give_sum_of_n_elements_geom_seq(a1=2,factor=2,n=2):
+     return a1 * (factor**n -1) / (factor - 1)
+
+print(give_sum_of_n_elements_geom_seq(2,3,4))
