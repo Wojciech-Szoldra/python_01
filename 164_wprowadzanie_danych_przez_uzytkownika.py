@@ -28,42 +28,36 @@ print('====ZAD 1====\n')
 import math
 
 def equasion():
-    while True:
         
-        def check_int(s):
-            if s[0] in ('-', '+'):
-                return s[1:].isdigit()
-            return s.isdigit()
+    def check_int(s):
+        if s[0] in ('-', '+'):
+            return s[1:].isdigit()
+        return s.isdigit()
 
-        a_str = input('Enter value \'a\':')
-        b_str = input('Enter value \'b\':')
-        c_str = input('Enter value \'c\':')
+    a_str = input('Enter value \'a\':')
+    b_str = input('Enter value \'b\':')
+    c_str = input('Enter value \'c\':')
 
-        if not check_int(a_str) or not check_int(b_str) or not check_int(c_str):
-            print('The value must be an integer')
-            break
-        
+    if not check_int(a_str) or not check_int(b_str) or not check_int(c_str):
+        print('The value must be an integer')
+    else:
         a = int(a_str)
         b= int(b_str)
         c = int(c_str)
-        
-        if a == 0:
-            print('This is no quadratic equation')
-            break
-        else:
-            delta = math.pow(b,2) - (4*a*c)
+    
+    if a == 0:
+        print('This is no quadratic equation')
+    else:
+        delta = math.pow(b,2) - (4*a*c)
 
-        if delta < 0:
-            print('No solution')
-            break
-        elif delta == 0:
-            x1 = (-b-math.sqrt(delta)) / (2*a)
-            print(f'X1 = {x1}')
-            break
-        elif delta > 0:
-            x1 = (-b-math.sqrt(delta)) / (2*a)
-            x2 = (-b+math.sqrt(delta)) / (2*a)
-            print(f'X1 = {x1}\nX2 = {x2}')
-            break
+    if delta < 0:
+        print('No solution')
+    elif delta == 0:
+        x1 = (-b-math.sqrt(delta)) / (2*a)
+        print(f'X1 = {x1}')
+    elif delta > 0:
+        x1 = (-b-math.sqrt(delta)) / (2*a)
+        x2 = (-b+math.sqrt(delta)) / (2*a)
+        print(f'X1 = {x1}\nX2 = {x2}')
 
 equasion()
