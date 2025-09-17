@@ -222,3 +222,25 @@ from datetime import date
 
 day = date(2025,8,18)
 print(day.weekday())
+
+# Funkcja sprawdzająca czy przekazany string to liczba
+
+def check_int(s):
+    if s[0] in ('-', '+'):
+        return s[1:].isdigit()
+    return s.isdigit()
+
+print(check_int('-10c')) #False
+print(check_int('-10'))  #True
+
+a = input('Enter value a: ')
+
+if a == 0:
+    print('a=0')
+
+b = input('Enter value b: ')
+
+if not check_int(a) or not check_int(b):
+    print(type(a))
+    print(type(b))
+    print('False!!!')
