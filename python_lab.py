@@ -240,6 +240,6 @@ if a == 0:
 
 b = input('Enter value b: ')
 
-if check_int(a) or check_int(b):
+if not check_int(a) or not check_int(b):
     print(type(a))
     print(type(b))
