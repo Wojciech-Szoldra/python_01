@@ -27,7 +27,7 @@ print('====ZAD 1====\n')
 
 import math
 
-def equasion():
+def equation():
         
     def check_int(s):
         if s[0] in ('-', '+'):
@@ -42,7 +42,7 @@ def equasion():
         print('The value must be an integer')
     else:
         a = int(a_str)
-        b= int(b_str)
+        b = int(b_str)
         c = int(c_str)
     
     if a == 0:
@@ -60,4 +60,4 @@ def equasion():
         x2 = (-b+math.sqrt(delta)) / (2*a)
         print(f'X1 = {x1}\nX2 = {x2}')
 
-equasion()
+equation()
