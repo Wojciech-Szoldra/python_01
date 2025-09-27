@@ -29,3 +29,28 @@ if os.path.exists(file_path):
     print(f'Only tail: {os.path.split(file_path) [1]}')
     print(f'Tuple: {os.path.splitdrive(file_path)}')
     print(f'First element - dirve letter: {os.path.splitdrive(file_path) [0]}')
+
+print('====LAB====\n')
+
+print('====ZAD 1====\n')
+
+import os
+import time
+
+dir = input('Enter the path to the file: ')
+
+if not os.path.exists(dir):
+    print('The path doesn\'t exist')
+else:
+    file = input('Enter the file name: ')
+
+path = os.path.join(dir,file)
+
+if not os.path.exists(path):
+    print('The file doesn\'t exist')
+else:
+    print('File information below:')
+    print(f'Modify date: {time.localtime(os.path.getmtime(path))}')
+    print(f'File size: {time.localtime(os.path.getsize(path))}')
+    print(f'The absolute path is: {os.path.abspath(path)}')
+    print(f'The relative path is: {os.path.relpath(path)}')
