@@ -36,3 +36,21 @@ while fragment:
     fragment = file.read(10)
 
 file.close()
+
+print('====LAB====\n')
+
+print('====ZAD 1====\n')
+
+file_path = r'D:\IT\Programowanie\testy\folder do zadan z os\pliki\temp\data_input\orders.txt'
+
+with open(file_path) as file:
+    for line in file:
+        line_no_enter = line.replace('\n','')
+        line_list = line_no_enter.split(',')
+        
+        if len(line_list) == 3:
+            print(f'Order from drugstore {line_list[0]}, item {line_list[1]}, amount {line_list[2]}')
+        else:
+            print(f'\n--Line {line_list} incorrect--\n')
+    
+print('\nProcessing complete.')
