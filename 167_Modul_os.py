@@ -14,10 +14,13 @@ print(fullpath)
 relative_path = 'python_lab.py'
 print(f'The absolute path is: {os.path.abspath(relative_path)}')
 
+# Zwraca ścieżkę do pliku docelowego, jeżeli plik jest linkiem symbolicznym
+print(f'The relative path is: {os.path.realpath(os.getcwd(),relative_path)}')
+
 # Wyodrębniamy nazwę pliku i samą ścieżkę
 file_path = r'D:\IT\Programowanie\python_01\python_lab.py' # r niweluje działanie znaków specjalnych
 print(f'The file name part is: {os.path.basename(file_path)}')
-print(f'The file name part is: {os.path.dirname(file_path)}')
+print(f'The path part is: {os.path.dirname(file_path)}')
 
 # Uzyskujemy różne informacje o pliku
 if os.path.exists(file_path):
