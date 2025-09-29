@@ -31,13 +31,13 @@ while line:
 
 dir_name = os.getcwd()
 
-file_name = input('Enter file name: ')
+file_name = input('Enter a file name: ')
 
 file_path = os.path.join(dir_name,file_name)
 
 with open(file_path,'a+') as file:
-    for i in range(len(web_addresses)):
-        file.write(web_addresses[i]+'\n')
+    for web_addres in web_addresses:
+        file.write(web_addres+'\n')
 
 print('====ZAD 2====\n')
 
